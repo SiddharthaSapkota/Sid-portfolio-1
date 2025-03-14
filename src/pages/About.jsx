@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className="w-full py-10 px-4">
+    <div id="about" className="w-full py-10 px-4 lg:px-32">
         <h1 className="text-center text-4xl font-bold mb-10">About</h1>
       <p>
         श्री कृष्ण गोविंद हरे मुरारी
