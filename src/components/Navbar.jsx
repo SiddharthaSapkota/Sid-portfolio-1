@@ -35,6 +35,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { IoMenu, IoClose } from "react-icons/io5";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [selected, setSelected] = useState("home");
@@ -76,7 +77,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-evenly lg:justify-between items-center space-x-6">
         {/* Logo / Brand */}
         <div className="font-bold text-xl">
-          <img src="src/assets/SIDDHARTHA.png" alt="logo-sid" className="w-46 lg:w-64 " />
+          <img src={logo} alt="logo-sid" className="w-46 lg:w-64 " />
         </div>
 
         {/* Desktop Navigation */}
