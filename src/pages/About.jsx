@@ -2,8 +2,8 @@ import React from 'react'
 
 function About() {
   return (
-    <div id="about" className="w-full py-10 px-4 lg:px-32">
-        <h1 className="text-center text-4xl font-bold mb-10">About</h1>
+    <div id="about" className="w-full mb-10 py-10 px-4 lg:px-32">
+        <h1 className="text-center text-4xl font-bold mb-10">About me</h1>
       <p>
         श्री कृष्ण गोविंद हरे मुरारी
         हे नाथ नारायण वासुदेव

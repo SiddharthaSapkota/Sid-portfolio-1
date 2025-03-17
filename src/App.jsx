@@ -12,11 +12,13 @@ function App() {
       <div className="flex justify-center">
         <Navbar /> 
       </div>
-      <Home />
-      <About />
-      <Technologies />
-      <Projects />
-      <Footer />
+      <div className="bg-[url(src/assets/bg-image.jpg)] bg-cover bg-end text-white">
+          <Home />
+          <About />
+          <Technologies />
+          <Projects />
+          <Footer />
+      </div>
     </>
   )
 }

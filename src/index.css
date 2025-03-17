@@ -5,3 +5,7 @@
   padding: 0;
   margin: 0;
 }
+
+.bg-image{
+  background-image: "../assets/background.jpg";
+}

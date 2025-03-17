@@ -1,14 +1,22 @@
 import React from "react";
-import { SiDjango, SiReact, SiMongodb } from "react-icons/si";
-import { FaHtml5, FaJs, FaBootstrap } from "react-icons/fa";
+import { SiDjango, SiReact, SiMongodb, SiMysql, SiLinux } from "react-icons/si";
+import { FaHtml5, FaJs, FaBootstrap, FaCss3 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 export default function Technologies() {
   // Technology Data (Icon, Color, Duration)
   const technologies = [
-    { icon: <SiDjango className="text-7xl text-green-700" />, duration: 2 },
-    { icon: <SiReact className="text-7xl text-cyan-400" />, duration: 2.5 },
+    {
+      icon: (
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+          style={{ height: "72px", width: "72px" }}
+          alt="Linux"
+        />
+      ),
+      duration: 2,
+    },
     {
       icon: (
         <img
@@ -20,10 +28,9 @@ export default function Technologies() {
       duration: 5,
     },
     { icon: <FaHtml5 className="text-7xl text-orange-500" />, duration: 6 },
-    { icon: <FaBootstrap className="text-7xl text-violet-700" />, duration: 4 },
-    { icon: <RiTailwindCssFill className="text-7xl text-cyan-400" />, duration: 3 },
+    { icon: <FaCss3 className="text-7xl text-blue-400" />, duration: 4 },
     { icon: <FaJs className="text-7xl text-amber-400" />, duration: 5 },
-    { icon: <SiMongodb className="text-7xl text-green-500" />, duration: 6 },
+    { icon: <SiMysql className="text-7xl text-blue-500" />, duration: 6 },
   ];
 
   // Animation Variants
@@ -42,7 +49,7 @@ export default function Technologies() {
 
   return (
     <div id="skills" className="h-1/2 flex flex-col justify-center items-center pb-24">
-      <h1 className="my-20 text-center text-4xl">Technologies</h1>
+      <h1 className="text-center text-4xl font-bold mb-10">Technologies</h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
@@ -55,7 +62,7 @@ export default function Technologies() {
             variants={iconVar(tech.duration)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-neutral-800 p-4"
+            className="rounded-2xl border-4 border-blue-300 p-4"
           >
             {tech.icon}
           </motion.div>

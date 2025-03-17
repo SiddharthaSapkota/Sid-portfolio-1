@@ -16,7 +16,7 @@ function Home() {
   });
 
   return (
-    <div id="home" className="h-screen flex items-center px-6 lg:px-0">
+    <div id="home" className="h-screen flex items-center px-6 lg:px-12 ">
       <div className="container mx-auto flex flex-col items-center justify-center text-center lg:flex-row lg:text-left">
         
         {/* Left Section - Text */}
@@ -25,7 +25,7 @@ function Home() {
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-4 text-3xl font-thin tracking-light sm:text-4xl md:text-5xl lg:text-6xl"
+            className="pb-4 text-3xl text-white font-thin tracking-light sm:text-4xl md:text-5xl lg:text-6xl"
           >
             Siddhartha Sapkota
           </motion.h1>
@@ -36,7 +36,7 @@ function Home() {
             animate="visible"
             className="bg-gradient-to-r from-blue-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl tracking-light"
           >
-            Quality Assurance / Cybersecurity Aspirant
+            Quality Assurance | Cybersecurity Aspirant
           </motion.span>
 
           <motion.p

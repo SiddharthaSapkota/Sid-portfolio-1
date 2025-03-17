@@ -4,7 +4,7 @@ import projects from "../data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full py-10 px-4">
+    <section id="projects" className="w-full mb-10 py-10 px-4">
       <h1 className="text-center text-4xl font-bold mb-10">Projects</h1>
       
       <div className="flex flex-col items-center space-y-12">

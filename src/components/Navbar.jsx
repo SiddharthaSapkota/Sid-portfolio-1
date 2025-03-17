@@ -69,20 +69,22 @@ function Navbar() {
 
   return (
     <nav
-      className={`bg-gray-800 py-4 px-6 w-1/2 md:w-2/3 lg:w-1/2 z-50 rounded-full fixed top-2 transform transition-transform duration-300 ${
+      className={`bg-gray-800 outline-2 outline-red-100 outline-dashed border-red-100 backdrop-blur-lg py-4 px-6 w-1/2 md:w-2/3 lg:w-1/2 z-50 rounded-full fixed top-2 transform transition-transform duration-300 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-evenly lg:justify-between items-center space-x-6">
         {/* Logo / Brand */}
-        <div className="text-white font-bold text-xl">SID</div>
+        <div className="font-bold text-xl">
+          <img src="src/assets/SIDDHARTHA.png" alt="logo-sid" className="w-46 lg:w-64 " />
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {["home", "about", "skills", "projects", "contact"].map((item) => (
             <button
               key={item}
-              className={`text-white text-lg ${
+              className={`text-purple-400 font-bold text-lg ${
                 selected === item ? "border-b-2 border-white" : ""
               }`}
               onClick={() => handleSelected(item)}
@@ -94,7 +96,7 @@ function Navbar() {
 
         {/* Mobile Menu Toggle Button */}
         <button
-          className="md:hidden text-white text-3xl"
+          className="md:hidden text-purple-400 text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <IoClose /> : <IoMenu />}
@@ -106,7 +108,7 @@ function Navbar() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: menuOpen ? 1 : 0, y: menuOpen ? 0 : -10 }}
         transition={{ duration: 0.3 }}
-        className={`absolute top-full w-1/2 bg-gray-800 rounded-b-lg shadow-lg md:hidden ${
+        className={`absolute top-full w-1/2  rounded-b-lg shadow-lg md:hidden ${
           menuOpen ? "block" : "hidden"
         }`}
       >
