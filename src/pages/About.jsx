@@ -1,59 +1,28 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
-    <div id="about" className="w-full mb-10 py-10 px-4 lg:px-32">
-        <h1 className="text-center text-4xl font-bold mb-10">About me</h1>
-      <p>
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        पितु-मात स्वामी सख़ा हमारे
-        पितु-मात स्वामी सख़ा हमारे
-        हे नाथ नारायण वासुदेवा
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        ठाकुर हमारे प्राणों से प्यारे
-        तुम हो हमारे, हम हैं तुम्हारे
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        गैयाँ चरैया, माख़न चुरैया
-        गैयाँ चरैया, माख़न चुरैया
-        दीनों की नैया के तुम ही ख़िवैया
-        हे नाथ नारायण वासुदेव
-        गोविंद मेरो है, गोपाल मेरो है
-        गोविंद मेरो है, गोपाल मेरो है
-        श्री बाँके-बिहारी नंदलाल मेरो है
-        गोविंद मेरो है, गोपाल मेरो है
-        श्री बाँके-बिहारी नंदलाल मेरो है
-        गोविंद मेरो है, गोपाल मेरो है
-        गोविंद मेरो है, गोपाल मेरो है
-        श्री बाँके-बिहारी नंदलाल मेरो है
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        तुमसे है धरती, तुमसे है अंबर
-        अग्नि-पवन और सातों समंदर
-        हे नाथ नारायण वासुदेव
-        श्री कृष्ण गोविंद हरे मुरारी
-        हे नाथ नारायण वासुदेव
-        गोविंद बोलो हरी गोपाल बोलो
-        गोविंद बोलो हरी गोपाल बोलो
-        राधारमण हरी गोविंद बोलो
-        गोविंद बोलो हरी गोपाल बोलो
-        गोविंद बोलो हरी गोपाल बोलो
-        राधारमण हरी गोविंद बोलो
-        गोविंद बोलो हरी गोपाल बोलो
-      </p>
+    <div
+      id="about"
+      className="w-full h-screen flex flex-col justify-center items-center px-4 md:px-8 lg:px-16"
+    >
+      <h1 className="text-center text-3xl md:text-4xl font-bold mb-6 md:mb-10">
+        About Me
+      </h1>
+
+      <div className="flex flex-wrap max-w-4xl justify-center  sm:px-4">
+        <p className="bg-gradient-to-b from-blue-300 via-cyan-200 to-green-500 bg-clip-text text-transparent text-sm sm:text-base md:text-lg leading-relaxed text-justify break-words">
+          Passionate tech enthusiast with a knack for sharing knowledge and
+          empowering others. Equipped with a solid foundation in BSc.CSIT, I
+          bring a unique blend of skills in HTML, CSS, Python, Linux, and
+          Cybersecurity. I thrive on making complex concepts accessible through
+          engaging teaching methods, fostering an environment where curiosity
+          and learning flourish. With a genuine dedication I aim to lean in tech
+          journey, joining a supportive community along the way.
+        </p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default About
+export default About;

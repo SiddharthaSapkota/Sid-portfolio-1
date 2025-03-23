@@ -1,6 +1,7 @@
 import React from "react";
-import Sid from "../assets/sid-photo.jpg";
+import Sid from "/siddhartha.png";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
   const container = (delay) => ({
@@ -16,25 +17,34 @@ function Home() {
   });
 
   return (
-    <div id="home" className="h-screen flex items-center px-6 lg:px-12 ">
+    <div id="home" className="h-screen w-full flex items-center px-6 lg:px-16">
       <div className="container mx-auto flex flex-col items-center justify-center text-center lg:flex-row lg:text-left">
         
         {/* Left Section - Text */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center flex-wrap">
           <motion.h1
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-4 text-3xl text-white font-thin tracking-light sm:text-4xl md:text-5xl lg:text-6xl"
+            className="pb-4 text-3xl text-white font-thin tracking-light sm:text-4xl md:text-5xl lg:text-5xl"
           >
-            Siddhartha Sapkota
+            <Typewriter
+                words={["Hi, I'm Siddhartha Sapkota 👋"]}
+                loop={1} // 0 means infinite loop
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+            />
+
           </motion.h1>
 
           <motion.span
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-            className="bg-gradient-to-r from-blue-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl tracking-light"
+            className="bg-gradient-to-r from-blue-300 via-cyan-200 to-green-500 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl tracking-light"
           >
             Quality Assurance | Cybersecurity Aspirant
           </motion.span>
@@ -57,7 +67,7 @@ function Home() {
             transition={{ duration: 1, delay: 1.2 }}
             src={Sid}
             alt="Siddhartha Sapkota"
-            className="rounded-lg size-2/3 sm:size-3/5 ring-4 ring-purple-200 shadow-lg"
+            className="rounded-lg size-2/3 sm:size-3/5 shadow-lg"
           />
         </div>
         

@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <Navbar /> 
-      </div>
-      <div className="bg-[url('assets/bg-image.jpg')] bg-cover bg-left text-white">
+      <div className="bg-[url('assets/bg-image.webp')] bg-cover bg-left text-white font-montserrat">
+          {/* <div className="flex justify-center items-center"> */}
+            <Navbar />
+          {/* </div> */}
           <Home />
           <About />
           <Technologies />

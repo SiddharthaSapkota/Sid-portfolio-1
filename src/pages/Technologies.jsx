@@ -1,6 +1,6 @@
 import React from "react";
-import { SiDjango, SiReact, SiMongodb, SiMysql, SiLinux } from "react-icons/si";
-import { FaHtml5, FaJs, FaBootstrap, FaCss3 } from "react-icons/fa";
+import { SiDjango, SiReact, SiMongodb, SiMysql, SiLinux, SiPostman } from "react-icons/si";
+import { FaHtml5, FaJs, FaBootstrap, FaCss3, } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
@@ -28,9 +28,10 @@ export default function Technologies() {
       duration: 5,
     },
     { icon: <FaHtml5 className="text-7xl text-orange-500" />, duration: 6 },
-    { icon: <FaCss3 className="text-7xl text-blue-400" />, duration: 4 },
-    { icon: <FaJs className="text-7xl text-amber-400" />, duration: 5 },
+    { icon: <FaCss3 className="text-7xl text-blue-400" />, duration: 5 },
     { icon: <SiMysql className="text-7xl text-blue-500" />, duration: 6 },
+    { icon: <FaJs className="text-7xl text-amber-400" />, duration: 5},
+    { icon: <SiPostman className="text-7xl text-orange-500" />, duration: 2 },
   ];
 
   // Animation Variants
@@ -48,7 +49,7 @@ export default function Technologies() {
   });
 
   return (
-    <div id="skills" className="h-1/2 flex flex-col justify-center items-center pb-24">
+    <section id="skills" className="w-full mb-10 py-10 flex flex-col justify-center items-center">
       <h1 className="text-center text-4xl font-bold mb-10">Technologies</h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
@@ -62,12 +63,12 @@ export default function Technologies() {
             variants={iconVar(tech.duration)}
             initial="initial"
             animate="animate"
-            className="rounded-2xl border-4 border-blue-300 p-4"
+            className="rounded-2xl border-4 border-green-500 p-4"
           >
             {tech.icon}
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </section>
   );
 }

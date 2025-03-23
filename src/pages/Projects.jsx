@@ -24,14 +24,14 @@ export default function Projects() {
                 <a href={project.link} target="_blank" rel="noreferrer">
                   <img
                     src={project.image}
-                    className="w-full max-w-[300px] h-[150px] object-cover rounded-lg shadow-lg"
+                    className="w-full max-w-[500px] h-[200px] object-cover rounded-lg shadow-lg"
                     alt={project.title}
                   />
                 </a>
               ) : (
                 <img
                   src={project.image}
-                  className="w-full max-w-[300px] h-[150px] object-cover rounded-lg shadow-lg"
+                  className="w-full max-w-[500px] h-[200px] object-cover rounded-lg shadow-lg"
                   alt={project.title}
                 />
               )}
@@ -45,7 +45,12 @@ export default function Projects() {
               className="w-full lg:w-2/3 text-center lg:text-left"
             >
               <h6 className="text-xl font-semibold mb-2">{project.title}</h6>
-              <p className="text-neutral-400 mb-4">{project.description}</p>
+              <p className="bg-gradient-to-r from-blue-300 via-cyan-200 to-green-500 bg-clip-text text-transparent mb-4">
+              {project.description.split("\n").map((line, index) => (
+                  <p key={index} className="mb-2">{line}</p>
+                ))}
+              </p>
+              
 
               {/* Tech Stack */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-2">

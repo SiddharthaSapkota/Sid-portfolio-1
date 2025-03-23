@@ -22,6 +22,7 @@ function Footer() {
                 <a href="https://www.instagram.com/sidspk69/" target="_blank" rel="noreferrer"><FaInstagram size={32} /></a>
                 <a href="https://www.facebook.com/sidspk69" target="_blank" rel="noreferrer"><FaFacebookSquare size={32} /></a>
         </div>
+        <p className="text-center mt-10">अक्षरातित 🙏</p>
     </div>
   )
 }
