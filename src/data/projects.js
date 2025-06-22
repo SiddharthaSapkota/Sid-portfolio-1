@@ -14,12 +14,12 @@ const projects = [
     },
     {
       id: 2,
-      title: "IQOS POS System",
+      title: "POS System",
       description:
-        "Contributed to the development and testing of a robust point of sale POS system for IQOS,ensuring seamless transaction processing and inventory management. \nExecuted detailed functional testing to verify the accuracy and efficiency of POS features, including sales transactions, payment processing, and receipt generation. \nProvided ongoing support and troubleshooting for the POS system, addressing and resolving issues promptly to maintain operational efficiency for IQOS.",
+        "Contributed to the development and testing of a robust point of sale POS system for IQOS, Himalayan POS,ensuring seamless transaction processing and inventory management. \nExecuted detailed functional testing to verify the accuracy and efficiency of POS features, including sales transactions, payment processing, and receipt generation. \nProvided ongoing support and troubleshooting for the POS system, addressing and resolving issues promptly to maintain operational efficiency for IQOS.",
       image: iqos,
       techStack: ["UI/UX Testing", "Function-testing", "Unit-testing", "Integration-testing"],
-      link: "https://iqos.bidheepos.com/",
+      link: "https://demo.bidheepos.com/",
     },
     {
       id: 3,
@@ -36,8 +36,8 @@ const projects = [
       description:
         "Played a key role in the development and testing of a comprehensive Human Resource Management System HRMS, ensuring the integration of essential HR functionalities. \nConducted rigorous testing to ensure data integrity and security within the HRMS, protecting sensitive employee information and complying with data protection regulations. \nWorked closely with HR professionals to gather requirements and feedback, contributing to a user-friendly interface and enhanced user experience for HRMS users.",
       image: hrms,
-      techStack: ["UI/UX Testing", "Responsiveness", "Functional Testing", "Performance Testing","Integration Testing", "Regression Testing", "Usability Testing"],
-      link: "https://bidheegroup.bidheehrms.com/",
+      techStack: ["UI/UX Testing", "Responsiveness", "Functional Testing", "Exploratory Testing","Integration Testing", "Regression Testing", "Usability Testing"],
+      link: "https://dev.bidheehrms.com/",
     },
   ];
   
